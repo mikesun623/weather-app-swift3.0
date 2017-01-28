@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weather_swift3_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Large-Sydney-Branch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-tO-ua4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2h-TP-efe">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <color key="barTintColor" red="0.99145537142227547" green="1" blue="0.15112155283836104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-BP-Flu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <color key="backgroundColor" red="0.98844276669980979" green="1" blue="0.14651424034414762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Conditon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN8-tu-Ioy">
+                                <rect key="frame" x="150" y="153" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3f-TJ-Pck">
+                                <rect key="frame" x="151" y="182" width="75" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pir-e2-x8y">
+                                <rect key="frame" x="241" y="165" width="118" height="94"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="search city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdo-au-BmB">
+                                <rect key="frame" x="97" y="115" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cwD-BP-Flu" firstAttribute="top" secondItem="ckb-tO-ua4" secondAttribute="top" id="BWI-jN-RcD"/>
+                            <constraint firstItem="Pir-e2-x8y" firstAttribute="centerY" secondItem="e3f-TJ-Pck" secondAttribute="centerY" id="CVt-4E-S0B"/>
+                            <constraint firstAttribute="trailing" secondItem="ckb-tO-ua4" secondAttribute="trailing" id="FTR-cs-C44"/>
+                            <constraint firstItem="cwD-BP-Flu" firstAttribute="leading" secondItem="S2h-TP-efe" secondAttribute="leading" id="I6q-vs-aR3"/>
+                            <constraint firstItem="cwD-BP-Flu" firstAttribute="trailing" secondItem="ckb-tO-ua4" secondAttribute="trailing" id="NMt-vs-Xj8"/>
+                            <constraint firstItem="ckb-tO-ua4" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Ovb-Ah-oe8"/>
+                            <constraint firstItem="ckb-tO-ua4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R4k-jk-h2X"/>
+                            <constraint firstItem="Pir-e2-x8y" firstAttribute="leading" secondItem="bN8-tu-Ioy" secondAttribute="trailing" constant="15" id="VJT-Xl-bmC"/>
+                            <constraint firstItem="Pir-e2-x8y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YzJ-ld-lcr"/>
+                            <constraint firstItem="ckb-tO-ua4" firstAttribute="leading" secondItem="S2h-TP-efe" secondAttribute="leading" id="pLb-0T-vet"/>
+                            <constraint firstItem="ckb-tO-ua4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rYJ-9E-Vu1"/>
+                            <constraint firstItem="cwD-BP-Flu" firstAttribute="trailing" secondItem="S2h-TP-efe" secondAttribute="trailing" id="ukC-oy-qpb"/>
+                            <constraint firstItem="S2h-TP-efe" firstAttribute="top" secondItem="cwD-BP-Flu" secondAttribute="bottom" id="wob-rI-EKq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLbl" destination="Kdo-au-BmB" id="Ti3-m6-llt"/>
+                        <outlet property="conditionLbl" destination="bN8-tu-Ioy" id="uys-5E-Lh2"/>
+                        <outlet property="degreeLbl" destination="e3f-TJ-Pck" id="A7Y-wp-gzx"/>
+                        <outlet property="imgView" destination="Pir-e2-x8y" id="jBi-ff-1ps"/>
+                        <outlet property="searchBar" destination="S2h-TP-efe" id="yOl-hf-9Rv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Large-Sydney-Branch.jpg" width="976" height="370"/>
+    </resources>
+</document>
